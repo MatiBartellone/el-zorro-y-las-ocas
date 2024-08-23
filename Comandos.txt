@@ -1,0 +1,9 @@
+nasm main.asm -f elf64
+nasm validaciones.asm -f elf64
+nasm prints.asm -f elf64
+nasm tablero.asm -f elf64
+nasm auxiliar.asm -f elf64
+nasm data.asm -f elf64
+nasm movimientos.asm -f elf64
+gcc main.o validaciones.o prints.o tablero.o auxiliar.o data.o movimientos.o -o main.out -no-pie
+./main.out
